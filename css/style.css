@@ -1,0 +1,231 @@
+@font-face {
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-style: normal;
+}
+
+.page {
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Main Sections */
+.section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1249px;
+	margin: 0 auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.page__content {
+	flex-grow: 1;
+}
+
+.section-heading {
+	color: #585858;
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 55px;
+	text-transform: uppercase;
+}
+
+.page__header_grey {
+	background-color: #e0e0e0;
+}
+
+.page__intro_grey {
+	background-color: #e0e0e0;
+}
+
+.header__line {
+	width: 122px;
+	height: 3px;
+	background-color: #ff2d2d;
+	border: none;
+}
+
+/* Header */
+.header {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+	width: 100%;
+	max-width: 1249px;
+	margin: 0 auto;
+	min-height: 89px;
+	background-color: #000000;
+}
+
+.page__header {
+	padding-top: 29px;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	list-style: none;
+	padding: 0;
+	margin: 0;	
+	margin-left: -20px;
+}
+
+.menu__item {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	min-height: 89px;
+}
+
+.menu__item:hover {
+	background-color: #ff3f40;
+}
+
+.menu__link {
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	color: #e0e0e0;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Intro */
+.intro {
+	padding-top: 103px;
+	padding-bottom: 94px;
+}
+
+.intro__content {
+	position: relative;
+    bottom: 11px;
+	width: 617px;
+	margin-bottom: 20px;
+	margin-right: 75px;
+}
+
+.intro__heading {
+	margin: 0;
+	font-size: 60px;
+	line-height: 1.2;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 1.5px;
+	/* Свойство letter-spacing позволяет изменить межбуквенное расстояние. */
+}
+
+.intro__heading_style {
+	letter-spacing: 6px;
+	word-break: break-word;
+	hyphens: auto;
+	/* Свойство word-break заставляет слова переноситься по буквам, если они не помещаются в родительский элемент.
+	Свойство hyphens добавляет дефис в месте переноса (может работать не во всех браузерах) */
+}
+
+.intro__text {
+	margin: 0;
+	line-height: 1.75;
+	max-width: 520px;
+	margin-bottom: 51px;
+	opacity: 0.7; 
+}
+
+.action-button {
+	box-sizing: border-box;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	display: inline-block;
+	width: 227px;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.action-button_red {
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #ff2d2d;
+}
+
+.intro__image {
+	width: 551px;
+	height: 356px;
+	box-shadow: 0 -10px 40px 0 rgb(124, 124, 124);
+	/* Свойство box-shadow позволяет создать тень бокса. Первые два значения - смещение по горизонтали и вертикали. Третье - размытие. Четвертое - распространение. Пятое цвет. */
+}
+
+/* Footer */
+.footer {
+	background-color: #2c2c2c;
+	padding: 0 1vw;
+}
+
+.footer__content {
+	box-sizing: border-box;
+	padding: 19px 0 0;
+	color: #e0e0e0;
+	align-items: center;
+	min-height: 110px;
+	background-color: #2c2c2c;
+}
+
+.footer__copyright {
+	margin: 0;
+	line-height: 1.75;
+}
+
+.footer__link {
+	display: inline-block;
+}
+
+.footer__social-links > .footer__link:not(:last-child) {
+	margin-right: 18px;
+}
+
